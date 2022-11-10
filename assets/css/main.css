@@ -1,0 +1,123 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 15px;
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(229, 6%, 66%);
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 30px;
+}
+
+header {
+  text-align: center;
+}
+
+header h2 {
+  font-size: 34px;
+  font-weight: 400;
+  color: hsl(234, 12%, 34%);
+}
+
+header h3 {
+  font-size: 34px;
+  font-weight: 600;
+  color: hsl(234, 12%, 34%);
+}
+
+header p {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px;
+  margin-top: 60px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 7px;
+  padding: 30px;
+  text-align: right;
+}
+
+.card-text {
+  text-align: left;
+  padding-bottom: 50px;
+  font-weight: 600;
+}
+
+.card1 {
+  border-top: 4px solid hsl(180, 62%, 55%);
+}
+
+.card2 {
+  border-top: 4px solid hsl(0, 78%, 62%);
+}
+
+.card3 {
+  border-top: 4px solid hsl(34, 97%, 64%);
+}
+
+.card4 {
+  border-top: 4px solid hsl(212, 86%, 64%);
+}
+
+.card-text h5 {
+  font-size: 20px;
+  color: hsl(234, 12%, 34%);
+  margin-bottom: 10px;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.card,
+.card4 {
+  align-self: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  body {
+    font-size: 13px;
+  }
+
+  header h2 {
+    font-size: 22px;
+  }
+
+  header h3 {
+    font-size: 22px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .card-text {
+    padding-bottom: 30px;
+  }
+}
+
+
